@@ -66,7 +66,7 @@ class RestProfile extends Component {
                     <div class="custrow-1">
                         <div class="cust-column-left-1" >
                         <div>
-                            <img src={this.props.imageURL} alt="" style ={{height:200, width:200 ,borderRadius:5, marginLeft:200, marginTop:30}}/>
+                            <img src="" alt="" style ={{height:200, width:200 ,borderRadius:5, marginLeft:200, marginTop:30}}/>
                         </div>
                         </div>
                         <div class="cust-column-middle-1">

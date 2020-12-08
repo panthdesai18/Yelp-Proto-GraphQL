@@ -38,7 +38,7 @@ class ViewSearchRest extends Component {
                 return(
                     <div>
                         <Card style={{width:375,borderStyle:"solid",borderWidth:1, padding: 5, borderColor:"#cfcfcf", borderRadius: 5}}>
-                            <CardImg top width="363" src={`http://localhost:3001/profimages/` + i.restphoto} alt="Dish Image" />
+                            <CardImg top width="363" src="" alt="Dish Image" />
                             <CardBody>
                                 <CardTitle style={{color:"#D32323", fontWeight:"bold",fontSize:18}}>{i.restname}</CardTitle>
                                 <CardSubtitle style={{fontSize:16,marginTop:10}}>{i.email}</CardSubtitle>

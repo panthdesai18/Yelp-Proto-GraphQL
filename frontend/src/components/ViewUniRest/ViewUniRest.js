@@ -107,7 +107,7 @@ class ViewUniRest extends Component {
             temp = this.state.currentpage.map( i => {
                 return (
                     <Card style={{width:350,borderStyle:"solid",borderWidth:1, marginTop: 10, borderRadius: 3, padding: 5, borderColor: "#cfcfcf"}}>
-                        <CardImg top width="100%" height="250px"src = {`http://localhost:3001/profimages/` + i.dishphoto} alt="Dish Image" />
+                        <CardImg top width="100%" height="250px"src = "" alt="Dish Image" />
                         <CardBody>
                             <CardTitle style={{color:"#D32323", fontWeight:"bold",fontSize:18}}>{i.dishname}</CardTitle>
                             <CardSubtitle style={{fontSize:16,marginTop:10}}>{i.category}</CardSubtitle>
@@ -153,16 +153,16 @@ class ViewUniRest extends Component {
                 <div style={{height: 160}}>
                     <div class = "row">
                         <div class = "column-one-rest">
-                            <img style={{height:140,width:340}}src = {`http://localhost:3001/profimages/` + temp6} alt="Rest Photo1"/>
+                            <img style={{height:140,width:340}}src = "" alt="Rest Photo1"/>
                         </div>
                         <div class = "column-two-rest">
-                            <img style={{height:140,width:340}}src = {`http://localhost:3001/profimages/` + temp7} alt="Rest Photo1"/>
+                            <img style={{height:140,width:340}}src = "" alt="Rest Photo1"/>
                         </div>
                         <div class = "column-three-rest">
-                            <img style={{height:140,width:340}}src = {`http://localhost:3001/profimages/` + temp8} alt="Rest Photo1"/>
+                            <img style={{height:140,width:340}}src = "" alt="Rest Photo1"/>
                         </div>
                         <div class = "column-four-rest">
-                            <img style={{height:140,width:340}}src = {`http://localhost:3001/profimages/` + temp9} alt="Rest Photo1"/>
+                            <img style={{height:140,width:340}}src = "" alt="Rest Photo1"/>
                         </div>
                     </div>
                 </div>

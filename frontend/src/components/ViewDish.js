@@ -74,7 +74,7 @@ class ViewDish extends Component {
                 return(
                     <div>
                         <Card style={{width:250,borderStyle:"solid",borderWidth:1, padding: 9, borderColor: "#cfcfcf", borderRadius: 4}}>
-                            <CardImg top width="100%" height="250px" src = {`http://localhost:3001/profimages/` + i.dishphoto} alt="Dish Image" />
+                            <CardImg top width="100%" height="250px" src = "" alt="Dish Image" />
                             <CardBody>
                             <CardTitle style={{color:"#D32323", fontWeight:"bold",fontSize:18}}>{i.dishname}</CardTitle>
                             <CardSubtitle style={{fontSize:16,marginTop:10}}>{i.category}</CardSubtitle>

@@ -29,6 +29,9 @@ export function signUp(payload){
                     input = {
                         message : "User Created"
                     }
+                    notification["success"]({
+                        message:"New User Signed Up!"
+                    })
                 }else{
                     
                 }
@@ -150,11 +153,11 @@ export function getProfile(payload){
                     console.log(response.data)
                     console.log("firstname", response.data.firstname)
                     Object.keys(response.data).forEach(function(key) {
-                                            if(response.data[key] === null || response.data[key] === 'null'){
-                                                console.log(key)
-                                                response.data[key] = ''
-                                            }
-                                        });
+                        if(response.data[key] === null || response.data[key] === 'null'){
+                            console.log(key)
+                            response.data[key] = ''
+                        }
+                    });
                     input ={
                         message : "User Data!",
                         userid: window.sessionStorage.getItem("UserID"),
@@ -237,6 +240,9 @@ export function restsignUp(payload){
                     input = {
                         message : "Rest User Created"
                     }
+                    notification["success"]({
+                        message:"New User Signed Up!"
+                    })
                 }else{
                     
                 }
@@ -266,6 +272,9 @@ export function restlogin(payload){
                     message : "User Created",
                     userid: window.sessionStorage.getItem("UserID")
                 }
+                notification["success"]({
+                    message:"Successfully Logged In!"
+                })
                 window.location.replace('/restProfile')
               }
               else{
@@ -802,6 +811,9 @@ export function placeOrder(payload){
                     input = {
                         message : "Order Placed!"
                     }
+                    notification["success"]({
+                        message:"Order Placed!"
+                    })
                 }else{
                     
                 }
@@ -1212,6 +1224,9 @@ export function addToCart(payload){
                     input = {
                         message: "Added to Cart!"
                     }
+                    notification["success"]({
+                        message:"Item Added to Cart!"
+                    })
                 }
                 else{
 

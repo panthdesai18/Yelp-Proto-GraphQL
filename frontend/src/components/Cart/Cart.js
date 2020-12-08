@@ -6,7 +6,6 @@ import {
 } from 'reactstrap';
 import { Button } from 'semantic-ui-react'
 import { Dropdown } from 'semantic-ui-react'
-import { connURL } from '../../Configure';
 import {connect} from 'react-redux'
 import { cart, placeOrder } from '../../js/actions';
 
@@ -52,7 +51,7 @@ class Cart extends Component {
                 return(
                     <div>
                         <Card style={{width:350,borderStyle:"solid",borderWidth:1, marginTop: 10, borderRadius: 3, padding: 5, borderColor: "#cfcfcf"}}>
-                            <CardImg top width="100%" src = {`http://localhost:3001/profimages/` + i.dishphoto} alt="Dish Image" />
+                            {/* <CardImg top width="100%" src = "" alt="Dish Image" /> */}
                             <CardBody>
                                 <CardTitle style={{color:"#D32323", fontWeight:"bold",fontSize:18}}>{i.restaurant}</CardTitle>
                                 <CardSubtitle style={{fontSize:16,marginTop:10, color: "#d32323",fontWeight:"bold"}}>{i.dishname}</CardSubtitle>
