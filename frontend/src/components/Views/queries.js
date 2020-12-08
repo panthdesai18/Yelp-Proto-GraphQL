@@ -1,7 +1,6 @@
 import { gql } from 'apollo-boost';
 
 const getProfileQuery = gql`
-
 query profile($email: String) {
     profile(email: $email) 
     {
@@ -20,3 +19,5 @@ query profile($email: String) {
         isOwner
     }
 }
+`;
+export {getProfileQuery};
